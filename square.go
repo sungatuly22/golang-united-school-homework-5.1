@@ -10,8 +10,8 @@ type Square struct {
 }
 
 func (receiver Square) End() Point {
-	x := receiver.start.x - int(receiver.a)
-	y := receiver.start.y + int(receiver.a)
+	x := receiver.start.x + int(receiver.a)
+	y := receiver.start.y - int(receiver.a)
 	return Point{x, y}
 }
 
